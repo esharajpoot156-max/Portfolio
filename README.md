@@ -1,75 +1,60 @@
-# React + TypeScript + Vite
+# Esha Ayyaz — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. Features a dark theme with gold accents, smooth scroll animations, and a horizontally scrolling projects showcase.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[portfolio-six-pi-kl787lp89i.vercel.app](https://portfolio-six-pi-kl787lp89i.vercel.app)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero Section** — Animated intro with a soft glow background effect
+- **About** — Two-column layout with profile photo and quick-info card
+- **Projects** — Horizontally scrolling project cards (browser-mockup style) linking to GitHub repos
+- **Skills** — Categorized skill tags (Frontend, Backend, Database, Tools)
+- **Experience & Education** — Work history and academic background side by side
+- **Contact** — Direct email link plus social profiles
+- **Navbar** — Fixed nav with active-link underline indicator
+- **Resume Download** — One-click resume PDF download
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React + TypeScript (Vite)
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Deployment:** Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎨 Theme
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Background: Dark (`#0a0a0a`)
+- Accent: Gold (`#d4af37`)
+- Style: Minimal & clean
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
 
 ```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── Experience.tsx
+│   └── Contact.tsx
+├── assets/
+│   └── profile.jpg
+├── App.tsx
+└── index.css
 ```
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## 📄 License
+
+This project is personal and not licensed for reuse.
