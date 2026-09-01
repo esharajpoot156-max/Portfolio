@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "/index.html",
+    "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        backgroud: "#0a0a0a",
+        background: "#0e0e0e",
         gold: {
           DEFAULT: "#d4af37",
           light: "#e6c866",
           dark: "#a8862c",
         },
+        skyBlue: "#ebecee",
       },
     },
   },
   plugins: [],
 }
-
